@@ -14,18 +14,18 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun setup() {
         parseFile()
-        DataManger.games
+        
+        binding?.recyclerOfGames?.adapter = GameAdapter(DataManger.games)
     }
 
     private fun parseFile() {
         val inputStream = assets.open("TokyoOlympics.csv")
         val buffer = BufferedReader(InputStreamReader(inputStream))
         val myParser = CsvParser()
-        buffer.forEachLine {
 
+        buffer.forEachLine {
             val currentGame = myParser.parse(it)
             DataManger.addGame(currentGame)
-
         }
     }
 }

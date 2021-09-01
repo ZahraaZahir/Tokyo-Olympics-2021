@@ -8,7 +8,7 @@ object DataManger {
         get() = gamesList
 
     fun addGame(games:Game){
-        gamesList.add(games)
+        gamesList += games
     }
 
 }
