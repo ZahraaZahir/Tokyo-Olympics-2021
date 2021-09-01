@@ -18,7 +18,7 @@
         app:lottie_rawRes="@raw/olympics_anim" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tokyo_olympics"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -31,6 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView" />
 
     <TextView
+        android:id="@+id/tokyo_olympics_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/year"
@@ -39,6 +40,15 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tokyo_olympics" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_of_games"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tokyo_olympics_year"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

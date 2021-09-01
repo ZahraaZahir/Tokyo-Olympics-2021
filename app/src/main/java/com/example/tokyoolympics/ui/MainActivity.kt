@@ -13,9 +13,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
 
     override fun setup() {
-
         parseFile()
-
+        DataManger.games
     }
 
     private fun parseFile() {
