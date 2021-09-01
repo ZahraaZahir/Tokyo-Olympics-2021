@@ -2,4 +2,5 @@
     <string name="app_name">Tokyo Olympics</string>
     <string name="tokyo_olympics">Tokyo Olympics</string>
     <string name="year">2021</string>
+    <string name="total_medals_text">Total Medals</string>
 </resources>
